@@ -2,6 +2,7 @@ package com.luckyboy.dto;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;
+import lombok.experimental.Accessors;
 
 /**
  * className: BigLotteryDTO
@@ -11,6 +12,7 @@ import lombok.EqualsAndHashCode;
  **/
 @EqualsAndHashCode(callSuper = true)
 @Data
+@Accessors(chain = true)
 public class BigLotteryDTO extends LotteryDTO{
     private int red1;
     private int red2;

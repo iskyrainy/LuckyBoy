@@ -1,1 +1,22 @@
-
+server:
+  port: 8893
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 123456
+    url: jdbc:mysql://192.168.25.128:3316/account_import?characterEncoding=utf-8&serverTimeZone=UTC
+    druid:
+      max-wait: 60000
+      max-active: 30
+      min-idle: 10
+      initial-size: 5
+      connectTimeout: 60000
+      socketTimeout: 60000
+      timeBetweenEvictionRunsMillis: 60000
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    open-in-view: true

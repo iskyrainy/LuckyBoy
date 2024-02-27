@@ -1,7 +1,7 @@
 package com.luckyboy.service;
 
+import com.luckyboy.data.Record;
 import com.luckyboy.dto.LotteryDTO;
-import org.springframework.stereotype.Service;
 
 /**
  * className: LotteryService
@@ -9,10 +9,9 @@ import org.springframework.stereotype.Service;
  * author: wn
  * date: 2024/2/26
  **/
-@Service
 public interface LotteryService {
-    LotteryDTO doubleColorBallLottery();
-    LotteryDTO bigLottery();
-    LotteryDTO welfareLottery3();
-    boolean save();
+    LotteryDTO doubleColorBallLottery(LotteryDTO lotteryDTO);
+    LotteryDTO bigLottery(LotteryDTO lotteryDTO);
+    LotteryDTO welfareLottery3(LotteryDTO lotteryDTO);
+    void save(Record record);
 }

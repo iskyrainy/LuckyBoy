@@ -2,6 +2,7 @@ package com.luckyboy.dto;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;
+import lombok.experimental.Accessors;
 
 /**
  * className: WelfareLottery3DTO
@@ -11,6 +12,7 @@ import lombok.EqualsAndHashCode;
  **/
 @EqualsAndHashCode(callSuper = true)
 @Data
+@Accessors(chain = true)
 public class WelfareLottery3DTO extends LotteryDTO{
     private int blue1;
     private int blue2;
